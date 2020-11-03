@@ -1,0 +1,20 @@
+{
+  "editor.rulers": [100
+  ],
+  "editor.tabSize": 2,
+  "files.eol": "\n",
+  "eslint.format.enable": true,
+  "eslint.packageManager": "yarn",
+  "eslint.validate": ["javascript", "javascriptreact", "vue"],
+  "npm.packageManager": "yarn",
+  "prettier.packageManager": "yarn",
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  }
+}

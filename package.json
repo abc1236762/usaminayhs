@@ -1,0 +1,36 @@
+{
+  "name": "usaminayhs",
+  "version": "1.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "author": {
+    "name": "Yùjǐn Lín",
+    "email": "abc1236762@outlook.com",
+    "url": "https://yurina.xyz"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "exe": "babel-node src/index.js",
+    "lint": "prettier --write . && eslint --ext .js,.json --fix ."
+  },
+  "dependencies": {
+    "acorn": "^8.0.4",
+    "axios": "^0.21.0",
+    "core-js": "^3.6.5",
+    "underscore.string": "^3.3.5",
+    "window": "^4.2.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/eslint-parser": "^7.12.1",
+    "@babel/node": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "eslint": "^7.12.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-json": "^2.1.2",
+    "eslint-plugin-prettier": "^3.1.4",
+    "jsonc-parser": "^2.3.1",
+    "prettier": "^2.1.2"
+  }
+}
