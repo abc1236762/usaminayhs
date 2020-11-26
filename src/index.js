@@ -91,7 +91,7 @@ const parserOptions = { ecmaVersion: 'latest', preserveParens: true };
         var r = decodeURIComponent(escape(i.decryptResource(n, t)));
         return i._free(n), r;
       };
-    })(t(1239)());
+    })(t(1242)());
   `);
   script.runInContext(sandbox);
   const assetMapPath = `/assets/asset-map-${sandbox.encryptPath(
@@ -100,6 +100,18 @@ const parserOptions = { ecmaVersion: 'latest', preserveParens: true };
   )}`;
   await api
     .get(assetMapPath, {
+      headers: { 'Content-Type': 'application/json' },
+      responseType: 'arraybuffer',
+    })
+    .then((response) => {
+      console.log(sandbox.decryptResource(response.data));
+    });
+  const assetMap0Path = `/assets/${sandbox.encryptPath(
+    '/assets/asset-map-chunk-0.json',
+    'asset-map-chunk-0',
+  )}`;
+  await api
+    .get(assetMap0Path, {
       headers: { 'Content-Type': 'application/json' },
       responseType: 'arraybuffer',
     })
